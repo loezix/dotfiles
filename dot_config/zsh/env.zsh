@@ -1,0 +1,4 @@
+# ENVIRONMENT VARS
+
+LOCAL=~/.local
+export PATH=$PATH:$LOCAL/bin

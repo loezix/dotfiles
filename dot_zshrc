@@ -1,35 +1,8 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#[[ -f ~/.config/zsh/powerlevel10k.zsh ]] && source ~/.config/zsh/powerlevel10k.zsh
+#[[ -f ~/.config/zsh/antigen.zsh ]] && source ~/.config/zsh/antigen.zsh
+[[ -f ~/.config/zsh/sdkman.zsh ]] && source ~/.config/zsh/sdkman.zsh
+[[ -f ~/.config/zsh/environment.zsh ]] && source ~/.config/zsh/environment.zsh
+[[ -f ~/.config/zsh/bindings.zsh ]] && source ~/.config/zsh/bindings.zsh
+[[ -f ~/.config/zsh/aliases.zsh ]] && source ~/.config/zsh/aliases.zsh
+[[ -f ~/.config/zsh/starship.zsh ]] && source ~/.config/zsh/starship.zsh
 
-source ~/.config/zsh/antigen/init.zsh
-source ~/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
-
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-LOCAL=~/.local
-
-export PATH=$PATH:$LOCAL/bin
-
-
-# Rust
-source ~/.cargo/env
-
-# Java
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# aliases
-alias vi="nvim"
-alias ls="lsd"
-alias  l="ls -l"
-alias la="ls -a"
-alias lla="ls -la"
-alias lt="ls --tree"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
