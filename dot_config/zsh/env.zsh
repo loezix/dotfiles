@@ -1,4 +1,11 @@
 # ENVIRONMENT VARS
 
 LOCAL=~/.local
+
+# ZSH SETTINGS
+
+ZSH_HIGHLIGHT_STYLES[path]=none
+ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#cccccc"
+
 export PATH=$PATH:$LOCAL/bin
