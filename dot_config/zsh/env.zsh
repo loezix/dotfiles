@@ -1,11 +1,6 @@
 # ENVIRONMENT VARS
 
 LOCAL=~/.local
+CARGO=~/.cargo
 
-# ZSH SETTINGS
-
-ZSH_HIGHLIGHT_STYLES[path]=none
-ZSH_HIGHLIGHT_STYLES[path_prefix]=none
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#cccccc"
-
-export PATH=$PATH:$LOCAL/bin
+export PATH=$PATH:$LOCAL/bin:$CARGO/bin
