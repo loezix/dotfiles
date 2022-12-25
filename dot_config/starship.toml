@@ -6,8 +6,7 @@ style = "bold #50fa7b"
 
 [hostname]
 style = "bold #bd93f9"
-ssh_only = "false"
-ssh_icon = ""
+ssh_only = false
 
 [username]
 format = "[$user]($style) on "
