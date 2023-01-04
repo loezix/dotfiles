@@ -54,7 +54,7 @@ window:
   startup_mode: Windowed
 
   # Background opacity
-  opacity: 0.95
+  opacity: 1
 
 scrolling:
   # maximum number of lines in the scrollback buffer. Specifying '0' will
@@ -71,7 +71,7 @@ font:
   # Style can be specified to pick a specific face.
   normal:
     family: VictorMono Nerd Font
-    style: ExtraLight
+    style: Regular
     # family: "Fira Code"
     # family: "Source Code Pro"
     # style: Retina
@@ -79,14 +79,14 @@ font:
   # The bold font face
   bold:
     family: VictorMono Nerd Font
-    style: Medium
+    style: Bold
     # family: "Fira Code"
     # family: "Source Code Pro"
 
   # The italic font face
   italic:
     family: VictorMono Nerd Font
-    style: ExtraLight Oblique
+    style: Italic
     # style: "Light Oblique"
     # family: "Fira Code"
     # family: "Source Code Pro"
@@ -99,7 +99,7 @@ font:
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
     x: 1
-    y: 0
+    y: 1
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increase the x offset to move the glyph to
@@ -134,68 +134,57 @@ custom_cursor_colors: true
 
 # Colors
 colors:
-  # Colors (Dracula PRO)
-  # Default colors
   primary:
-    background: '0x22212c'
-    foreground: '0xf8f8f2'
-
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
-
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor. If these are unset,
-  # the cursor color will be the inverse of the cell color.
+    background: '#282a36'
+    foreground: '#f8f8f2'
+    bright_foreground: '#ffffff'
   cursor:
-    text: '0x454158'
-    cursor: '0xf8f8f2'
-
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area. If selection
-  # background is unset, selection color will be the inverse of the cell colors.
-  # If only text is unset the cell text color will remain the same.
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '#44475a'
+      background: '#50fa7b'
+    focused_match:
+      foreground: '#44475a'
+      background: '#ffb86c'
+  footer_bar:
+    background: '#282a36'
+    foreground: '#f8f8f2'
+  hints:
+    start:
+      foreground: '#282a36'
+      background: '#f1fa8c'
+    end:
+      foreground: '#f1fa8c'
+      background: '#282a36'
+  line_indicator:
+    foreground: None
+    background: None
   selection:
-    text: '0xf8f8f2'
-    background: '0x454158'
-
-  # Normal colors
+    text: CellForeground
+    background: '#44475a'
   normal:
-    black:   '0x22212c'
-    red:     '0xff9580'
-    green:   '0x8aff80'
-    yellow:  '0xffff80'
-    blue:    '0x9580ff'
-    magenta: '0xff80bf'
-    cyan:    '0x80ffea'
-    white:   '0xf8f8f2'
-
-  # Bright colors
+    black: '#21222c'
+    red: '#ff5555'
+    green: '#50fa7b'
+    yellow: '#f1fa8c'
+    blue: '#bd93f9'
+    magenta: '#ff79c6'
+    cyan: '#8be9fd'
+    white: '#f8f8f2'
   bright:
-    black:   '0x22212c'
-    red:     '0xffaa99'
-    green:   '0xa2ff99'
-    yellow:  '0xffff99'
-    blue:    '0xaa99ff'
-    magenta: '0xff99cc'
-    cyan:    '0x99ffee'
-    white:   '0xffffff'
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '0xff00ff' }`
-  #
-  # indexed_colors: []
-
+    black: '#6272a4'
+    red: '#ff6e6e'
+    green: '#69ff94'
+    yellow: '#ffffa5'
+    blue: '#d6acff'
+    magenta: '#ff92df'
+    cyan: '#a4ffff'
+    white: '#ffffff'
 # Visual Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once

@@ -1,6 +1,7 @@
 [[ -f ~/.config/zsh/antigen.zsh ]] && source ~/.config/zsh/antigen.zsh
 [[ -f ~/.config/zsh/nvm.zsh ]] && source ~/.config/zsh/nvm.zsh
 [[ -f ~/.config/zsh/sdkman.zsh ]] && source ~/.config/zsh/sdkman.zsh
+[[ -f ~/.config/zsh/conda.zsh ]] && source ~/.config/zsh/conda.zsh
 [[ -f ~/.config/zsh/env.zsh ]] && source ~/.config/zsh/env.zsh
 [[ -f ~/.config/zsh/settings.zsh ]] && source ~/.config/zsh/settings.zsh
 [[ -f ~/.config/zsh/bindings.zsh ]] && source ~/.config/zsh/bindings.zsh
