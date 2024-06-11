@@ -1,10 +1,19 @@
-[[ -f ~/.config/zsh/antigen.zsh ]] && source ~/.config/zsh/antigen.zsh
-[[ -f ~/.config/zsh/nvm.zsh ]] && source ~/.config/zsh/nvm.zsh
-[[ -f ~/.config/zsh/sdkman.zsh ]] && source ~/.config/zsh/sdkman.zsh
-[[ -f ~/.config/zsh/conda.zsh ]] && source ~/.config/zsh/conda.zsh
 [[ -f ~/.config/zsh/env.zsh ]] && source ~/.config/zsh/env.zsh
-[[ -f ~/.config/zsh/settings.zsh ]] && source ~/.config/zsh/settings.zsh
-[[ -f ~/.config/zsh/bindings.zsh ]] && source ~/.config/zsh/bindings.zsh
 [[ -f ~/.config/zsh/aliases.zsh ]] && source ~/.config/zsh/aliases.zsh
-[[ -f ~/.config/zsh/starship.zsh ]] && source ~/.config/zsh/starship.zsh
+[[ -f ~/.config/zsh/antigen.zsh ]] && source ~/.config/zsh/antigen.zsh
+[[ -f ~/.config/zsh/settings.zsh ]] && source ~/.config/zsh/settings.zsh
 
+[[ -f ~/.config/zsh/conda.zsh ]] && source ~/.config/zsh/conda.zsh
+[[ -f ~/.config/zsh/cuda.zsh ]] && source ~/.config/zsh/cuda.zsh
+[[ -f ~/.config/zsh/java.zsh ]] && source ~/.config/zsh/java.zsh
+[[ -f ~/.config/zsh/jetbrains.zsh ]] && source ~/.config/zsh/jetbrains.zsh
+[[ -f ~/.config/zsh/js.zsh ]] && source ~/.config/zsh/js.zsh
+[[ -f ~/.config/zsh/nvm.zsh ]] && source ~/.config/zsh/nvm.zsh
+[[ -f ~/.config/zsh/rust.zsh ]] && source ~/.config/zsh/rust.zsh
+[[ -f ~/.config/zsh/sdkman.zsh ]] && source ~/.config/zsh/sdkman.zsh
+
+[[ -f ~/.config/zsh/tmux.zsh ]] && source ~/.config/zsh/tmux.zsh
+[[ -f ~/.config/zsh/zoxide.zsh ]] && source ~/.config/zsh/zoxide.zsh
+
+[[ -f ~/.config/zsh/bindings.zsh ]] && source ~/.config/zsh/bindings.zsh
+[[ -f ~/.config/zsh/starship.zsh ]] && source ~/.config/zsh/starship.zsh
