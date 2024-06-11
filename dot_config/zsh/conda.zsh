@@ -1,19 +1,17 @@
 ## MINICONDA
 
-# conda init -q "$(basename "${SHELL}")"
-
- # >>> conda initialize >>>
+# >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+CONDA_HOME=$HOME/.local/opt/miniconda3
+__conda_setup="$($CONDA_HOME/bin/conda 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
-     eval "$__conda_setup"
- else
-     if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-         . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-     else
-         export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
-     fi
- fi
- unset __conda_setup
- # <<< conda initialize <<<
-
+    eval "$__conda_setup"
+else
+    if [ -f "$CONDA_HOME/etc/profile.d/conda.sh" ]; then
+        . "$CONDA_HOME/etc/profile.d/conda.sh"
+    else
+        export PATH="$CONDA_HOME/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<

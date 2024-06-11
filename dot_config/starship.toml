@@ -15,17 +15,11 @@ format = "[$user]($style) on "
 style_user = "bold #8be9fd"
 show_always = true
 
-[directory.substitutions]
-"Documents" = " "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-
 [line_break]
 disabled = true
 
 [aws]
-symbol = "  "
+symbol = " "
 
 [buf]
 symbol = " "
@@ -34,6 +28,7 @@ symbol = " "
 symbol = " "
 
 [conda]
+ignore_base = true
 symbol = " "
 
 [dart]
@@ -76,13 +71,13 @@ symbol = " "
 symbol = " "
 
 [memory_usage]
-symbol = " "
+symbol = "󰍛 "
 
 [meson]
-symbol = "喝 "
+symbol = " "
 
 [nim]
-symbol = " "
+symbol = " "
 
 [nix_shell]
 symbol = " "
@@ -114,7 +109,7 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
-OpenBSD = " "
+OpenBSD = " "
 openSUSE = " "
 OracleLinux = " "
 Pop = " "
@@ -126,10 +121,10 @@ Solus = "ﴱ "
 SUSE = " "
 Ubuntu = " "
 Unknown = " "
-Windows = " "
+Windows = " "
 
 [package]
-symbol = " "
+symbol = " "
 
 [python]
 symbol = " "
@@ -145,7 +140,4 @@ symbol = " "
 
 [scala]
 symbol = " "
-
-[spack]
-symbol = "🅢 "
 

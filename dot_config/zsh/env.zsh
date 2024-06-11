@@ -1,6 +1,6 @@
 # ENVIRONMENT VARS
 
 LOCAL=~/.local
-CARGO=~/.cargo
+RUSTICL_ENABLE=radeonsi
 
-export PATH=$PATH:$LOCAL/bin:$CARGO/bin
+export PATH=$PATH:$LOCAL/bin

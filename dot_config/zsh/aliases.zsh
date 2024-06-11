@@ -1,10 +1,10 @@
 # ALIASES
 
-alias  vi="nvim"
-alias  ls="exa --icons"
-alias   l="exa -l --icons"
-alias  la="exa -a --icons"
-alias lla="exa -la --icons"
-alias  lt="exa -T -L3 --icons"
-alias cat="bat"
-alias  ps="procs"
+alias   vi="nvim"
+alias   ls="exa --icons --group-directories-first"
+alias    l="ls -l"
+alias   la="ls -a"
+alias  lla="ls -la"
+alias   lt="ls -T -L3 --icons"
+alias  cat="bat"
+alias grep="rg"
