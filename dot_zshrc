@@ -12,7 +12,7 @@
 [[ -f ~/.config/zsh/rust.zsh ]] && source ~/.config/zsh/rust.zsh
 [[ -f ~/.config/zsh/sdkman.zsh ]] && source ~/.config/zsh/sdkman.zsh
 
-[[ -f ~/.config/zsh/tmux.zsh ]] && source ~/.config/zsh/tmux.zsh
+# [[ -f ~/.config/zsh/tmux.zsh ]] && source ~/.config/zsh/tmux.zsh
 [[ -f ~/.config/zsh/zoxide.zsh ]] && source ~/.config/zsh/zoxide.zsh
 
 [[ -f ~/.config/zsh/bindings.zsh ]] && source ~/.config/zsh/bindings.zsh
