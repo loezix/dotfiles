@@ -1,8 +1,5 @@
 ## MINICONDA
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-CONDA_HOME=$HOME/.local/opt/miniconda3
 __conda_setup="$($CONDA_HOME/bin/conda 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
@@ -14,4 +11,3 @@ else
     fi
 fi
 unset __conda_setup
-# <<< conda initialize <<<
