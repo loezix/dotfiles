@@ -27,11 +27,13 @@ bindkey '^[[F' end-of-line
 
 ## aliases
 alias   vi="nvim"
-alias   ls="eza --icons -l --group-directories-first --git --no-user --no-permissions --no-time"
-alias    l="ls -l --git"
-alias   la="ls -a"
-alias  lla="ls -la"
-alias   lt="ls -T -L3 --icons"
+alias   ls="eza -l --icons --group-directories-first --git --no-user --no-permissions --no-time"
+alias    l="ls"
+alias   ll="eza -l --icons --group-directories-first --git"
+alias   la="l -a"
+alias  lla="ll -a"
+alias   lt="l -T -L3"
+alias  llt="ll -T -L3"
 alias  cat="bat --number --color=always"
 alias grep="rg"
 

@@ -26,9 +26,9 @@ symbol = "─"
 style = "bold #50fa7b"
 
 [hostname]
-style = "bold #bd93f9"
+style = "#bd93f9"
 ssh_only = false
-ssh_symbol = "󰣀"
+ssh_symbol = "󰣀 "
 
 [os]
 disabled = false
