@@ -27,7 +27,7 @@ bindkey '^[[F' end-of-line
 
 ## aliases
 alias   vi="nvim"
-alias   ls="eza --icons --group-directories-first"
+alias   ls="eza --icons -l --group-directories-first --git --no-user --no-permissions --no-time"
 alias    l="ls -l --git"
 alias   la="ls -a"
 alias  lla="ls -la"

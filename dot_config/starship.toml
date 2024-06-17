@@ -4,20 +4,23 @@
 
 # [prompt]
 format = '''
-$os$username$hostname$directory$all
+$os$username$hostname$directory$git_branch$git_commit$git_state$git_status$fill
 $character
 '''
 right_format = '''
 $cmd_duration
 '''
-continuation_prompt = '▶▶ '
 add_newline = true
 follow_symlinks = true
 palette = "catppuccin_mocha"
 
 # modules
 [cmd_duration]
-style = "bold #f1fa8c"
+min_time = 0
+style = "#f1fa8c"
+
+[fill]
+symbol = "─"
 
 [directory]
 style = "bold #50fa7b"
@@ -25,6 +28,7 @@ style = "bold #50fa7b"
 [hostname]
 style = "bold #bd93f9"
 ssh_only = false
+ssh_symbol = "󰣀"
 
 [os]
 disabled = false
