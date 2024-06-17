@@ -1,0 +1,12 @@
+/.git/
+
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._.*
+
+*.log
+/log/
+/logs/
+
