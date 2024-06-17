@@ -2,15 +2,95 @@
 
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# options
-
-add_newline = true
-
+# [prompt]
+format = '''
+$os$username$hostname$directory$all
+$character
+'''
+right_format = '''
+$cmd_duration
+'''
 continuation_prompt = '▶▶ '
-
+add_newline = true
+follow_symlinks = true
 palette = "catppuccin_mocha"
 
-# color palletes
+# modules
+[cmd_duration]
+style = "bold #f1fa8c"
+
+[directory]
+style = "bold #50fa7b"
+
+[hostname]
+style = "bold #bd93f9"
+ssh_only = false
+
+[os]
+disabled = false
+
+[username]
+format = "[$user]($style) on "
+style_user = "bold #8be9fd"
+show_always = true
+
+[line_break]
+disabled = true
+
+[aws]
+symbol = "\ue7ad "
+
+[c]
+symbol = "\ue61e "
+
+[conda]
+ignore_base = true
+symbol = "\ueabc "
+
+[elixir]
+symbol = "\ue62d "
+
+[git_branch]
+symbol = "\ue725 "
+
+[golang]
+symbol = "\ue724 "
+
+[gradle]
+symbol = "\ue660 "
+
+[haskell]
+symbol = "\ue777 "
+
+[java]
+symbol = "\ue738 "
+
+[lua]
+symbol = "\ue620 "
+
+[nodejs]
+symbol = "\ue719 "
+
+[package]
+symbol = "\ueb29 "
+[python]
+symbol = "\ue73c "
+
+[ruby]
+symbol = "\ue739 "
+
+[rust]
+symbol = "\ue7a8 "
+
+[scala]
+symbol = "\ue737 "
+
+[os.symbols]
+Macos = "\ue711 "
+Gentoo = "\uf30d "
+Windows = "\ue62a "
+
+# palletes
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
@@ -38,146 +118,3 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
-
-# modules
-[cmd_duration]
-style = "bold #f1fa8c"
-
-[directory]
-style = "bold #50fa7b"
-
-[hostname]
-style = "bold #bd93f9"
-ssh_only = false
-
-[username]
-format = "[$os$user]($style) on "
-style_user = "bold #8be9fd"
-show_always = true
-
-[line_break]
-disabled = true
-
-[aws]
-symbol = " "
-
-[buf]
-symbol = " "
-
-[c]
-symbol = " "
-
-[conda]
-ignore_base = true
-symbol = " "
-
-[dart]
-symbol = " "
-
-[docker_context]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
-
-[git_branch]
-symbol = " "
-
-[golang]
-symbol = " "
-
-[guix_shell]
-symbol = " "
-
-[haskell]
-symbol = " "
-
-[haxe]
-symbol = "⌘ "
-
-[hg_branch]
-symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
-
-[lua]
-symbol = " "
-
-[memory_usage]
-symbol = "󰍛 "
-
-[meson]
-symbol = " "
-
-[nim]
-symbol = " "
-
-[nix_shell]
-symbol = " "
-
-[nodejs]
-symbol = " "
-
-[os.symbols]
-Alpine = " "
-Amazon = " "
-Android = " "
-Arch = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "﯑ "
-Gentoo = " "
-HardenedBSD = "ﲊ "
-Illumos = " "
-Linux = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = " "
-openSUSE = " "
-OracleLinux = " "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-Redox = " "
-Solus = "ﴱ "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Windows = " "
-
-[package]
-symbol = " "
-
-[python]
-symbol = " "
-
-[rlang]
-symbol = "ﳒ "
-
-[ruby]
-symbol = " "
-
-[rust]
-symbol = " "
-
-[scala]
-symbol = " "
-
