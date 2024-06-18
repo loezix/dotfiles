@@ -24,6 +24,8 @@ bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
+bindkey '\e[1;3D' beginning-of-line
+bindkey '\e[1;3C' end-of-line
 
 ## aliases
 alias   vi="nvim"
