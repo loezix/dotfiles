@@ -23,6 +23,7 @@ symbol = ""
 [hostname]
 ssh_only = true
 ssh_symbol = "󰣀 "
+style = "bold rosewater"
 
 [directory]
 truncation_length = 4
