@@ -18,17 +18,22 @@ palette = "catppuccin_mocha"
 min_time = 0
 
 [fill]
-symbol = "─"
+symbol = ""
 
 [hostname]
-ssh_only = false
+ssh_only = true
 ssh_symbol = "󰣀 "
+
+[directory]
+truncation_length = 4
+style = "bold lavender"
 
 [os]
 disabled = false
 
 [username]
-show_always = true
+show_always = false
+style_user = "bold sapphire"
 
 [line_break]
 disabled = true
