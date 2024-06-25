@@ -21,7 +21,7 @@ min_time = 0
 symbol = ""
 
 [hostname]
-ssh_only = true
+ssh_only = false
 ssh_symbol = "󰣀 "
 style = "bold rosewater"
 
