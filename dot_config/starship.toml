@@ -22,7 +22,7 @@ symbol = ""
 
 [hostname]
 ssh_only = false
-ssh_symbol = "󰣀 "
+ssh_symbol = ""
 style = "bold rosewater"
 
 [directory]
@@ -33,7 +33,7 @@ style = "bold lavender"
 disabled = false
 
 [username]
-show_always = false
+show_always = true
 style_user = "bold sapphire"
 
 [line_break]
