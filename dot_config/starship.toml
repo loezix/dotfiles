@@ -4,7 +4,7 @@
 
 # [prompt]
 format = '''
-[─](bold black) $os$username$hostname$directory$git_branch$git_commit$git_state$git_status$fill
+[─](bold black) $os$username@$hostname$directory$git_branch$git_commit$git_state$git_status$fill
 $character
 '''
 right_format = '''
@@ -22,8 +22,8 @@ symbol = ""
 
 [hostname]
 ssh_only = false
-ssh_symbol = ""
-style = "bold peach"
+style = "bold mauve"
+format = "[$hostname]($style) "
 
 [directory]
 truncation_length = 4
@@ -35,6 +35,7 @@ disabled = false
 [username]
 show_always = true
 style_user = "bold sapphire"
+format = "[$user]($style)"
 
 [line_break]
 disabled = true
