@@ -7,14 +7,15 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Catppuccin Mocha",
-  "base_keymap": "SublimeText",
-  "buffer_font_family": "Monaspace Argon",
-  "ui_font_size": 12,
-  "buffer_font_size": 12,
-  "buffer_font_features": {
-    "calt": true
-  },
-  "tab_size": 2,
-  "hard_tabs": true
+	"restore_on_startup": "none",
+	"theme": "Catppuccin Mocha",
+	"base_keymap": "SublimeText",
+	"buffer_font_family": "Monaspace Argon",
+	"ui_font_size": 12,
+	"buffer_font_size": 12,
+	"buffer_font_features": {
+		"calt": true
+	},
+	"tab_size": 2,
+	"hard_tabs": true
 }
