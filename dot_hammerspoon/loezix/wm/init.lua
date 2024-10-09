@@ -1,0 +1,1 @@
+require("loezix.wm.tiling")
