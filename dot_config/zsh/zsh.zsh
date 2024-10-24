@@ -17,6 +17,10 @@ setopt hist_find_no_dups
 ## style
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':completion:*:git-checkout:*' sort false
+zstyle ':completion:*:descriptions' format '[%d]'
+
 
 ## bindings
 bindkey -e
@@ -38,15 +42,12 @@ alias   lt="l -T -L3"
 alias  llt="ll -T -L3"
 alias  cat="bat --number --color=always"
 alias grep="rg"
+alias mdcat="mdcat --paginate"
 
 ## plugin settings
 
-### zsh-syntax-highlight
-if [[ ! -z $ZSH_HIGHLIGHT_STYLES ]]; then
-  ZSH_HIGHLIGHT_STYLES[path]=none
-  ZSH_HIGHLIGHT_STYLES[path_prefix]=none
-  ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#aaaaaa"
+### syntax-highlight
+if [[ ! -z $FAST_HIGHLIGHT_STYLES ]]; then
+  FAST_HIGHLIGHT_STYLES[path-to-dir]="fg=magenta"
 fi
 
-## services
-autoload compinit && compinit

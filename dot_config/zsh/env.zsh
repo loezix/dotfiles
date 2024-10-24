@@ -8,7 +8,10 @@ case $(uname -s) in
 	Darwin*) CONDA_HOME="/usr/local/Caskroom/miniconda/base";;
 esac
 
-PREVIEW_FILE="bat --number --color=always --line-range :500 {}"
-PREVIEW_DIRECTORY="eza --tree --color=always {} | head -200"
+export LESSOPEN='|~/.local/bin/lessfilter %s'
+
+export PREVIEW
+
+export EDITOR="vi"
 
 export PATH=$PATH:$LOCAL/bin
