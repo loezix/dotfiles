@@ -7,8 +7,28 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"restore_on_startup": "none",
-	"theme": "Catppuccin Mocha",
+	"assistant": {
+  "default_model": {
+   "provider": "ollama",
+   "model": "gemma3:latest"
+  },
+  "version": "2"
+ },
+ "ssh_connections": [
+    {
+      "host": "kefka.lzx.corp",
+      "projects": [
+        {
+          "paths": [
+            "~/Development"
+          ]
+        }
+      ]
+    }
+  ],
+ "icon_theme": "Colored Zed Icons Theme Dark",
+ "restore_on_startup": "none",
+	"theme": "Ayu Dark",
 	"buffer_font_family": "Monaspace Argon",
 	"ui_font_size": 12,
 	"buffer_font_size": 12,
@@ -17,5 +37,17 @@
 	},
 	"autosave": { "after_delay": { "milliseconds": 500 } },
 	"tab_size": 2,
-	"hard_tabs": true
+	"hard_tabs": true,
+	"language_models": {
+    "ollama": {
+      "api_url": "https://ollama.lzx.corp",
+      "available_models": [
+        {
+          "name": "gemma3:latest",
+          "display_name": "gemma 3",
+          "max_tokens": 32768
+        }
+      ]
+    }
+  }
 }

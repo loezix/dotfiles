@@ -1,2 +1,4 @@
-export JAVA_HOME=$HOME/.jdks/jdk-21
-export PATH=$PATH:$JAVA_HOME/bin
+export JENV_HOME=$LOCAL/share/jenv
+export PATH=$PATH:$JENV_HOME/bin
+
+eval "$(jenv init -)"

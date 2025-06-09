@@ -32,6 +32,7 @@ bindkey '\e[1;3D' beginning-of-line
 bindkey '\e[1;3C' end-of-line
 
 ## aliases
+alias bunx="bun x"
 alias   vi="nvim"
 alias   ls="eza -l --icons --group-directories-first --git --no-user --no-permissions --no-time"
 alias    l="ls"
@@ -40,7 +41,7 @@ alias   la="l -a"
 alias  lla="ll -a"
 alias   lt="l -T -L3"
 alias  llt="ll -T -L3"
-alias  cat="bat --number --color=always"
+alias  cat="bat --number --color=auto"
 alias grep="rg"
 alias mdcat="mdcat --paginate"
 

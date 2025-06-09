@@ -1,0 +1,25 @@
+
+font_family		   Monaspice Nerd Font Mono
+
+
+shell_integration 	   no-cursor
+cursor_shape 		   underline
+cursor_blink_interval 	   -1
+
+hide_window_decorations    titlebar-only
+
+
+window_margin_width 	   10
+single_window_margin_width 10
+
+enabled_layouts            Tall,*
+
+macos_titlebar_color       background
+macos_option_as_alt 	   yes
+
+background_opacity 	   1
+
+tab_bar_tyle 		   powerline
+tab_powerline_style 	   slanted
+
+#include themes/catppuccin/mocha.conf
