@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "${TERM}" = "xterm-kitty" ]; then
+if [ "${TERM}" = "xterm-ghostty" ]; then
 
   session_name="0"
 

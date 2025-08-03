@@ -34,8 +34,8 @@ bindkey '\e[1;3C' end-of-line
 ## aliases
 alias bunx="bun x"
 alias   vi="nvim"
-alias   ls="eza -l --icons --group-directories-first --git --no-user --no-permissions --no-time"
-alias    l="ls"
+alias   ls="eza --icons --group-directories-first --git"
+alias    l="ls -l"
 alias   ll="eza -l --icons --group-directories-first --git"
 alias   la="l -a"
 alias  lla="ll -a"
@@ -51,4 +51,3 @@ alias mdcat="mdcat --paginate"
 if [[ ! -z $FAST_HIGHLIGHT_STYLES ]]; then
   FAST_HIGHLIGHT_STYLES[path-to-dir]="fg=magenta"
 fi
-

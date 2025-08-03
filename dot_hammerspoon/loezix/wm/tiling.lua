@@ -12,9 +12,9 @@ end
 
 local function appy_padding(wf)
   wf.x = wf.x + padding
-  wf.y = wf.y + padding
-  wf.w = wf.w - padding * 2
-  wf.h = wf.h - padding * 2
+  wf.y = wf.y + 24 + padding
+  wf.w = wf.w - padding
+  wf.h = wf.h - 24 - padding
   return wf
 end
 

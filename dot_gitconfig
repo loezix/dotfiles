@@ -11,3 +11,6 @@
 	conflictstyle = diff3
 [diff]
 	colorMoved = default
+
+[includeIF "gitdir:~/Development/Repo/@luizalabs/"]
+	path = ~/Development/Repo/@luizalabs/.gitconfig

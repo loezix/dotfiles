@@ -5,7 +5,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 autoload -U compinit; compinit
 
-zinit light Aloxaf/fzf-tab
+#zinit light Aloxaf/fzf-tab
 zinit light zdharma-continuum/fast-syntax-highlighting
 #zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
